@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Zhewei Fang 的个人主页，记录创造、学习与开源实践。" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#0a0a0b" />
+    <title>Zhewei Fang — Personal Site</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%230a0a0b'/%3E%3Cpath d='M16 19h32L25 45h23' fill='none' stroke='%23c7ff4a' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到正文</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回首页">ZF<span>.</span></a>
+      <nav aria-label="主导航">
+        <a href="#about">关于</a>
+        <a href="#work">方向</a>
+        <a href="#contact">联系</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="切换明暗主题" title="切换明暗主题">
+        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.1A8.5 8.5 0 0 1 8.9 3.8a8.5 8.5 0 1 0 11.3 11.3Z"/></svg>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="eyebrow"><span></span> Available for meaningful work</div>
+        <h1>把想法，做成<br /><em>可以使用</em>的东西。</h1>
+        <p class="hero-copy">
+          我是 <strong>Zhewei Fang</strong>，关注软件、AI 与互联网产品。喜欢把复杂问题拆开，再用清晰、可靠的方式重新组合。
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">看看我在关注什么 <span aria-hidden="true">↘</span></a>
+          <a class="button ghost github-link" href="https://github.com/real-fzw" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="orbit" aria-hidden="true">
+          <div class="orbit-ring ring-one"></div>
+          <div class="orbit-ring ring-two"></div>
+          <div class="orbit-core">01</div>
+          <span class="orbit-label label-a">THINK</span>
+          <span class="orbit-label label-b">BUILD</span>
+          <span class="orbit-label label-c">SHIP</span>
+        </div>
+      </section>
+
+      <section class="manifesto" id="about">
+        <p class="section-index">01 / ABOUT</p>
+        <div>
+          <h2>少一点噪声，<br />多一点真正解决问题的作品。</h2>
+          <p>这个网站是我的数字空间：用来整理项目、沉淀经验，也记录那些值得继续追问的问题。</p>
+        </div>
+      </section>
+
+      <section class="work" id="work">
+        <div class="section-heading">
+          <p class="section-index">02 / FOCUS</p>
+          <h2>正在关注</h2>
+        </div>
+        <div class="focus-grid">
+          <article class="focus-card">
+            <span class="card-number">01</span>
+            <div class="card-icon" aria-hidden="true">⌘</div>
+            <h3>Build</h3>
+            <p>从真实需求出发，把模糊想法变成结构清晰、体验自然的产品。</p>
+          </article>
+          <article class="focus-card featured">
+            <span class="card-number">02</span>
+            <div class="card-icon" aria-hidden="true">✦</div>
+            <h3>Explore</h3>
+            <p>持续探索 AI 与新工具，让技术真正放大人的判断力和创造力。</p>
+          </article>
+          <article class="focus-card">
+            <span class="card-number">03</span>
+            <div class="card-icon" aria-hidden="true">↗</div>
+            <h3>Share</h3>
+            <p>公开过程、总结方法，让每一次实践都能成为下一次的起点。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <p class="section-index">03 / CONTACT</p>
+        <h2>有个值得做的想法？</h2>
+        <p>欢迎在 GitHub 上找到我，一起聊聊代码、产品，或者下一个有趣的问题。</p>
+        <a class="text-link github-link" href="https://github.com/real-fzw" target="_blank" rel="noreferrer">前往 GitHub <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="#top">ZF<span>.</span></a>
+      <p>Designed with intent. Built for the open web.</p>
+      <p>© <span id="year"></span> Zhewei Fang</p>
+    </footer>
+  </body>
+</html>
