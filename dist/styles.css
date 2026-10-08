@@ -48,11 +48,19 @@ nav { display: flex; gap: 1.5rem; font-size: .9rem; }
 .section h2 { margin: 0 0 1.5rem; color: var(--text); font-size: 1.15rem; font-weight: 600; letter-spacing: -.02em; }
 .section p { max-width: 650px; margin: 0 0 1rem; }
 .section p:last-child { margin-bottom: 0; }
-.work-list { border-top: 1px solid var(--line); }
-.work-item { display: grid; grid-template-columns: 52px 1fr; gap: 1.25rem; padding: 1.35rem 0; border-bottom: 1px solid var(--line); }
+.work-list { display: grid; gap: 1.15rem; }
+.work-item { padding: 1.35rem; border: 1px solid #d8dee8; border-radius: 18px; background: #fff; box-shadow: 0 5px 18px rgba(28, 43, 68, .045); }
 .work-year { color: var(--muted); font-size: .85rem; }
-.work-item h3 { margin: 0 0 .25rem; font-size: 1rem; font-weight: 600; }
+.work-item h3 { margin: .65rem 0 .4rem; color: #cf510b; font-size: 1.05rem; font-weight: 600; line-height: 1.5; }
 .work-item p { margin: 0 0 .45rem; color: var(--muted); }
+.paper-badges, .paper-links { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; }
+.paper-badges span { padding: .18rem .6rem; border-radius: 999px; background: #df600d; color: white; font-size: .75rem; font-weight: 600; }
+.paper-badges .author-badge { background: #fff1e9; color: #c95112; border: 1px solid #f3cbb5; font-weight: 400; }
+.work-item .paper-authors { margin-bottom: .6rem; font-size: .9rem; color: #596271; }
+.paper-authors strong { color: var(--text); }
+.paper-links { margin-top: .85rem; }
+.paper-links a, .paper-links span { padding: .22rem .7rem; border: 1px solid #e3e7ee; border-radius: 999px; background: #f4f5f8; color: #505b6c; font-size: .8rem; font-weight: 600; }
+.paper-links a:hover { color: #cf510b; text-decoration: none; border-color: #e6ba9e; }
 .work-meta { color: var(--muted); font-size: .8rem; }
 .experience-item h3 { margin: 0; font-size: 1rem; }
 .experience-item .subtitle { margin: .2rem 0 1rem; color: var(--muted); font-size: .9rem; }
