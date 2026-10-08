@@ -3,97 +3,126 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Zhewei Fang 的个人主页，记录创造、学习与开源实践。" />
-    <meta name="color-scheme" content="light dark" />
-    <meta name="theme-color" content="#0a0a0b" />
-    <title>Zhewei Fang — Personal Site</title>
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%230a0a0b'/%3E%3Cpath d='M16 19h32L25 45h23' fill='none' stroke='%23c7ff4a' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
-    />
+    <meta name="description" content="Zhewei Fang 的个人主页，记录项目、学习与日常。" />
+    <meta name="color-scheme" content="light" />
+    <title>Zhewei Fang — 个人主页</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232d5ca8'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial' font-size='27' fill='white'%3EZF%3C/text%3E%3C/svg%3E" />
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./app.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#main">跳到正文</a>
-
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="返回首页">Zhewei Fang</a>
+    <header class="topbar">
+      <a class="wordmark" href="#top">Zhewei Fang</a>
       <nav aria-label="主导航">
         <a href="#about">关于</a>
-        <a href="#work">方向</a>
-        <a href="#contact">联系</a>
+        <a href="#experience">经历</a>
+        <a href="#work">论文</a>
+        <a href="#education">教育</a>
       </nav>
-      <button class="theme-toggle" type="button" aria-label="切换明暗主题" title="切换明暗主题">
-        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/></svg>
-        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.1A8.5 8.5 0 0 1 8.9 3.8a8.5 8.5 0 1 0 11.3 11.3Z"/></svg>
-      </button>
     </header>
 
-    <main id="main">
-      <section class="hero" id="top">
-        <div class="hero-main">
-          <p class="eyebrow">个人主页 / Personal site</p>
-          <h1>你好，我是<br /><em>Zhewei Fang</em>。</h1>
-          <p class="hero-copy">
-            关注软件、AI 与互联网产品。喜欢把复杂问题拆开，再用清晰、可靠的方式重新组合。
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="https://github.com/real-fzw" target="_blank" rel="noreferrer">查看 GitHub</a>
-            <a class="button ghost" href="#about">了解更多</a>
+    <main id="top" class="layout">
+      <aside class="profile">
+        <img class="avatar" src="./assets/profile-000.png" alt="方喆炜的照片" />
+        <h1>方喆炜</h1>
+        <p class="name-en">Zhewei Fang</p>
+        <p class="role">杭州电子科技大学 · 硕士研究生</p>
+        <p class="location">端侧大模型后训练 · 统一多模态</p>
+        <div class="profile-links">
+          <a href="https://github.com/real-fzw" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="mailto:fzw_18268300430@163.com">Email</a>
+        </div>
+      </aside>
+
+      <div class="content">
+        <section id="about" class="section first-section">
+          <h2>About Me</h2>
+          <p>你好，我是方喆炜，目前在杭州电子科技大学攻读计算机科学与技术硕士学位。</p>
+          <p>我的研究方向包括大模型后训练、统一多模态、Agentic RL、多模态理解与生成。我关注模型从研究走向真实设备和实际应用的完整过程。</p>
+          <p>本科就读于台州学院数据科学与大数据技术专业，专业排名第一，获国家奖学金、浙江省优秀毕业生和优秀毕业论文。</p>
+        </section>
+
+        <section id="experience" class="section">
+          <h2>Experience</h2>
+          <div class="experience-item">
+            <div>
+              <h3>阿里巴巴集团（淘宝）· Meta 团队</h3>
+              <p class="subtitle">算法实习生 · 2025–2026</p>
+            </div>
+            <ul>
+              <li>深度参与 MNN-Pocket 后训练全流程，覆盖数据、SFT、RL、MOPD、量化、评测与端侧交付。</li>
+              <li>搭建 SFT Loop Engine，通过失败样本自动归因、合成补数与迭代训练，使 11 项任务均值提升 7.46 个百分点。</li>
+              <li>参与多教师蒸馏与 QAT，将 302.8M 模型压缩至 166MB；MNN 开源模型累计下载 6K+。</li>
+              <li>主导 Imp-o 1B–3B 训练与 Sana-Turbo 端侧加速，并推进端云协同 Agentic RL 实验。</li>
+            </ul>
           </div>
-        </div>
-        <aside class="hero-note">
-          <p class="note-label">CURRENTLY</p>
-          <p>探索 AI 工具、产品设计<br />和更好的工作方式。</p>
-          <p class="note-label note-gap">BASED IN</p>
-          <p>China · UTC+8</p>
-        </aside>
-      </section>
+        </section>
 
-      <section class="manifesto" id="about">
-        <p class="section-index">01</p>
-        <div>
-          <p class="section-kicker">ABOUT</p>
-          <h2>记录正在做的事，<br />也记录正在学习的东西。</h2>
-          <p>这个网站是我的数字空间：用来整理项目、沉淀经验，也记录那些值得继续追问的问题。</p>
-        </div>
-      </section>
+        <section id="work" class="section">
+          <h2>Publications &amp; Projects</h2>
+          <div class="work-list">
+            <article class="work-item">
+              <div class="work-year">TPAMI</div>
+              <div>
+                <h3>PerDepNet: Personality-guided Cross-domain Multitask Learning Network for Automated Video Depression Detection</h3>
+                <p>独立第一作者。引入人格域信息，并设计跨领域多任务学习与视听融合模块，增强抑郁相关情绪线索建模。</p>
+                <span class="work-meta">IEEE TPAMI · CCF A · 已录用</span>
+              </div>
+            </article>
+            <article class="work-item">
+              <div class="work-year">TMM</div>
+              <div>
+                <h3>Towards Efficient Unified Multimodal Models for Image Understanding, Generation, and Editing</h3>
+                <p>第一作者。以冻结 VLM 与扩散模型构建双路径统一框架，兼顾图像理解、生成和编辑；Imp-o-3B 的 GenEval 达 0.86。</p>
+                <span class="work-meta">IEEE TMM · CCF A · 在投</span>
+              </div>
+            </article>
+            <article class="work-item">
+              <div class="work-year">TIM</div>
+              <div>
+                <h3>Blind 3D-synthesized Image Quality Measurement by Analysis of Local and Global Statistical Properties</h3>
+                <p>第一作者。提取局部与全局统计特征表征虚拟视点合成失真，完成无参考图像质量预测。</p>
+                <span class="work-meta">IEEE TIM · 已发表</span>
+              </div>
+            </article>
+          </div>
+        </section>
 
-      <section class="work" id="work">
-        <div class="section-heading">
-          <p class="section-index">02</p>
-          <div><p class="section-kicker">FOCUS</p><h2>正在关注</h2></div>
-        </div>
-        <div class="focus-list">
-          <article class="focus-card">
-            <span class="card-number">01</span>
-            <div><h3>Build</h3><p>从真实需求出发，把模糊想法变成结构清晰、体验自然的产品。</p></div>
-          </article>
-          <article class="focus-card">
-            <span class="card-number">02</span>
-            <div><h3>Explore</h3><p>持续探索 AI 与新工具，让技术真正放大人的判断力和创造力。</p></div>
-          </article>
-          <article class="focus-card">
-            <span class="card-number">03</span>
-            <div><h3>Share</h3><p>公开过程、总结方法，让每一次实践都能成为下一次的起点。</p></div>
-          </article>
-        </div>
-      </section>
+        <section id="education" class="section">
+          <h2>Education</h2>
+          <div class="timeline">
+            <div class="timeline-item"><time>2024.09 – 至今</time><div><strong>杭州电子科技大学</strong><span>计算机科学与技术 · 硕士</span></div></div>
+            <div class="timeline-item"><time>2020.09 – 2024.07</time><div><strong>台州学院</strong><span>数据科学与大数据技术 · 本科 · GPA 4.07 · 专业排名第 1</span></div></div>
+          </div>
+        </section>
 
-      <section class="contact" id="contact">
-        <p class="section-index">03</p>
-        <div><p class="section-kicker">CONTACT</p><h2>保持联系</h2></div>
-        <p>欢迎在 GitHub 上找到我，一起聊聊代码、产品，或者下一个有趣的问题。</p>
-        <a class="text-link github-link" href="https://github.com/real-fzw" target="_blank" rel="noreferrer">github.com/real-fzw</a>
-      </section>
+        <section id="awards" class="section">
+          <h2>Awards</h2>
+          <ul class="compact-list">
+            <li>国家奖学金（2023）</li>
+            <li>华为 ICT 大赛全球二等奖 / 全国一等奖（2023）</li>
+            <li>CCF YOCSEF 学术秀全国二等奖（2024）</li>
+            <li>中国“互联网+”大学生创新创业大赛国家银奖（2024）</li>
+            <li>浙江省“挑战杯”省银奖（2024）</li>
+          </ul>
+        </section>
+
+        <section id="skills" class="section">
+          <h2>Skills</h2>
+          <dl class="skills-list">
+            <div><dt>Programming</dt><dd>C / C++ / Python / MATLAB / LaTeX</dd></div>
+            <div><dt>Frameworks</dt><dd>PyTorch / TensorFlow / ms-swift</dd></div>
+            <div><dt>Research</dt><dd>大模型后训练、多模态理解与生成、模式识别、图像质量评价、多模态情感识别</dd></div>
+          </dl>
+        </section>
+
+        <section id="contact" class="section contact-section">
+          <h2>Contact</h2>
+          <p>如果你想聊聊研究、项目或开源合作，欢迎通过 <a href="https://github.com/real-fzw" target="_blank" rel="noreferrer">GitHub</a> 或 <a href="mailto:fzw_18268300430@163.com">Email</a> 联系我。</p>
+        </section>
+
+        <footer>© <span id="year">2026</span> Zhewei Fang</footer>
+      </div>
     </main>
-
-    <footer>
-      <a class="brand footer-brand" href="#top">Zhewei Fang</a>
-      <p>Personal site</p>
-      <p>© <span id="year"></span> Zhewei Fang</p>
-    </footer>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
   </body>
 </html>
