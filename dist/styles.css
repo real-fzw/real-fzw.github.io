@@ -88,6 +88,13 @@ nav { display: flex; gap: 1.5rem; font-size: .9rem; }
 .news-list li { display: grid; grid-template-columns: 100px 1fr; gap: 1rem; padding: .65rem 0; border-bottom: 1px solid var(--line); }
 .news-list time { color: var(--muted); font-size: .85rem; }
 .contact-section { border-bottom: 0; }
+.model-downloads { border: 1px solid var(--line); border-radius: 12px; padding: 1.25rem; }
+.model-downloads h3 { font-size: 1.05rem; margin: 0; overflow-wrap: anywhere; }
+.model-downloads .model-repo { color: var(--muted); font-size: .875rem; margin: .25rem 0 1.25rem; }
+.download-counts { display: flex; flex-wrap: wrap; gap: 1.5rem 3rem; margin: 0; }
+.download-counts dt { color: var(--muted); font-size: .875rem; }
+.download-counts dd { margin: .2rem 0 0; font-size: 1.6rem; font-weight: 600; font-variant-numeric: tabular-nums; }
+.model-downloads .download-status { margin: 1rem 0 0; font-size: .8rem; color: var(--muted); }
 footer { padding: 2rem 0 3rem; color: var(--muted); font-size: .8rem; }
 
 @media (max-width: 720px) {
