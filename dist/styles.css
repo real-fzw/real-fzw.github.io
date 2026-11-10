@@ -83,6 +83,7 @@ nav a:hover { background: #edf2f8; color: var(--link); text-decoration: none; }
 .news-list span { font-size: .95rem; }
 .contact-section { border-bottom: 0; }
 .contact-section p { color: var(--muted); }
+.wechat-id { color: var(--text); font-weight: 550; user-select: all; }
 footer { padding: 24px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: .8rem; }
 @media (max-width: 1100px) {
   .layout { grid-template-columns: 195px minmax(0, 1fr); gap: 30px; }
