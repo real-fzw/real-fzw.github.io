@@ -29,6 +29,7 @@ nav a:hover { background: #edf2f8; color: var(--link); text-decoration: none; }
 .profile-links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
 .profile-links a { border: 1px solid var(--line); border-radius: 7px; padding: 4px 13px; font-size: .875rem; background: #f8faff; }
 .profile-links a:hover { background: #edf2fa; text-decoration: none; }
+.profile-email { margin: 22px 0 0; font-size: .8rem; overflow-wrap: anywhere; }
 .content { min-width: 0; }
 .section { padding: 36px 0; border-bottom: 1px solid var(--line); }
 .first-section { padding-top: 3px; }
@@ -102,6 +103,7 @@ footer { padding: 24px 0 40px; border-top: 1px solid var(--line); color: var(--m
   .profile h1 { font-size: 1.5rem; } .name-en { margin: 2px 0 10px; font-size: .875rem; }
   .role, .location { font-size: .8rem; margin-bottom: 5px; }
   .profile-links { grid-column: 1 / -1; margin-top: 18px; }
+  .profile-email { grid-column: 1 / -1; margin-top: 18px; }
   .section { padding: 28px 0; } .first-section { padding-top: 0; }
   .section h2 { font-size: 1.25rem; gap: 9px; margin-bottom: 18px; flex-wrap: wrap; }
   #research { padding: 20px; }
