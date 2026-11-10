@@ -32,6 +32,7 @@ nav a:hover { background: #edf2f8; color: var(--link); text-decoration: none; }
 .profile-links a { border: 1px solid var(--line); border-radius: 7px; padding: 4px 13px; font-size: .875rem; background: #f8faff; }
 .profile-links a:hover { background: #edf2fa; text-decoration: none; }
 .profile-email { margin: 22px 0 0; font-size: .8rem; overflow-wrap: anywhere; }
+.profile-wechat { margin: 6px 0 0; color: var(--muted); font-size: .8rem; grid-column: 1 / -1; overflow-wrap: anywhere; }
 .content { min-width: 0; }
 .section-heading-row { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; margin-bottom: 23px; }
 .section .section-heading-row h2 { margin: 0; }
