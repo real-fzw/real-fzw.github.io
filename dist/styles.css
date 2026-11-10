@@ -64,6 +64,11 @@ nav a:hover { background: #edf2f8; color: var(--link); text-decoration: none; }
 .paper-figure figcaption { margin-top: 5px; color: #7a8492; font-size: .75rem; text-align: right; }
 .model-downloads { padding: 24px; border: 1px solid #dbe1eb; border-radius: 14px; background: var(--surface); box-shadow: 0 4px 16px #23395706; }
 .model-downloads h3 { font-size: 1.1rem; margin: 0; overflow-wrap: anywhere; }
+.model-downloads + .model-downloads { margin-top: 20px; }
+.model-downloads .paper-badges { margin-bottom: 10px; }
+.model-downloads .model-description { color: #526074; font-size: .95rem; }
+.model-downloads .paper-links { margin-bottom: 20px; }
+.model-downloads .download-scope { color: var(--muted); font-size: .8rem; margin: 12px 0 0; }
 .model-downloads .model-repo { margin: 3px 0 20px; color: var(--muted); font-size: .875rem; }
 .download-counts { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 0; padding: 18px 0; border-block: 1px solid #edf0f5; }
 .download-counts dt { color: var(--muted); font-size: .875rem; }
