@@ -3,6 +3,17 @@
     { prefix: 'hf', endpoint: 'https://huggingface.co/api/models/taobao-mnn/MNN-Sana-Edit-V2?expand[]=downloads&expand[]=downloadsAllTime', cacheKey: 'hf-downloads:taobao-mnn/MNN-Sana-Edit-V2:v1' },
     { prefix: 'pocket', endpoint: 'https://huggingface.co/api/models?author=taobao-mnn&search=MNN-Pocket&limit=100&expand[]=downloads&expand[]=downloadsAllTime', cacheKey: 'hf-downloads:taobao-mnn/MNN-Pocket-series:v1', series: true }
   ];
+  const totals = new Map();
+  function renderCombined() {
+    const element = document.getElementById('downloads-combined');
+    if (!element || totals.size !== projects.length) return;
+    const total = [...totals.values()].reduce((sum, value) => sum + value, 0);
+    if (!Number.isSafeInteger(total)) return;
+    const en = document.documentElement.lang === 'en';
+    element.textContent = new Intl.NumberFormat(en ? 'en-US' : 'zh-CN').format(total);
+    element.title = en ? 'MNN-Pocket series + MNN-Sana-Edit-V2; repository download counts, not unique users. Includes cached values when a refresh fails.' : 'MNN-Pocket 全系列与 MNN-Sana-Edit-V2 的累计下载次数合计，非去重用户数；刷新失败时包含上次缓存值。';
+  }
+  document.addEventListener('languagechange', renderCombined);
   for (const project of projects) {
   const { endpoint, cacheKey } = project;
   const interval = 5 * 60 * 1000;
@@ -22,6 +33,8 @@
     && Number.isFinite(data.updatedAt) && data.updatedAt > 0;
 
   function render(data, cached) {
+    totals.set(project.prefix, data.downloadsAllTime);
+    renderCombined();
     lastCached = cached;
     const en = english();
     const number = new Intl.NumberFormat(en ? 'en-US' : 'zh-CN');

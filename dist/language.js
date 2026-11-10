@@ -28,6 +28,7 @@
     'Led Imp-o 1B–3B training and Sana-Turbo on-device acceleration, and advanced device–cloud agentic RL experiments.'
   ]);
   translate('#open-source .author-badge', ['Primary Developer', 'Primary Developer']);
+  translate('.aggregate-label', ['Total Downloads']);
   translate('#open-source .model-repo', ['On-device Small Models · Post-training &amp; Deployment', 'taobao-mnn · Hugging Face']);
   translate('#open-source .model-description', [
     'As a primary developer, contributed extensively to data construction, SFT, RL, multi-teacher distillation, quantization, and evaluation to bring models to on-device deployment with MNN.',

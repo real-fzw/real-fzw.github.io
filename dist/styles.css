@@ -36,6 +36,10 @@ nav a:hover { background: #edf2f8; color: var(--link); text-decoration: none; }
 .profile-links a:hover { background: #edf2fa; text-decoration: none; }
 .profile-email { margin: 22px 0 0; font-size: .8rem; overflow-wrap: anywhere; }
 .content { min-width: 0; }
+.section-heading-row { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; margin-bottom: 23px; }
+.section .section-heading-row h2 { margin: 0; }
+.aggregate-downloads { display: flex; align-items: baseline; gap: 9px; color: var(--muted); font-size: .875rem; }
+.aggregate-downloads strong { color: var(--link); font-size: 1.3rem; font-weight: 650; font-variant-numeric: tabular-nums; }
 .section { padding: 36px 0; border-bottom: 1px solid var(--line); }
 .first-section { padding-top: 3px; }
 .section h2 { display: flex; align-items: baseline; gap: 12px; margin: 0 0 23px; font-size: 1.45rem; font-weight: 650; letter-spacing: -.025em; line-height: 1.4; }
