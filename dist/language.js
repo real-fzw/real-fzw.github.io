@@ -51,7 +51,7 @@
     'China International “Internet+” College Students Innovation and Entrepreneurship Competition · National Silver Award (2024)'
   ]);
   translate('#contact p', [
-    'For research discussions, projects, or open-source collaboration, feel free to reach out via <a href="https://github.com/real-fzw" target="_blank" rel="noreferrer">GitHub</a> or <a href="mailto:fzw_18268300430@163.com">email</a>.',
+    'For research discussions, projects, or open-source collaboration, feel free to reach out via WeChat or <a href="mailto:fzw_18268300430@163.com">email</a>.',
     'WeChat: <span class="wechat-id">fzwreal0430</span>'
   ]);
   const images = [...document.querySelectorAll('img')].map((element, i) => ({ element, zh: element.alt, en: [
