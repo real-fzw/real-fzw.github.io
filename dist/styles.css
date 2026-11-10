@@ -19,10 +19,7 @@ a:focus-visible { outline: 2px solid var(--link); outline-offset: 5px; border-ra
 .wordmark:hover { text-decoration: none; }
 nav { display: flex; flex-wrap: wrap; gap: 6px; }
 nav { margin-left: auto; }
-.language-toggle { flex-shrink: 0; padding: 5px 11px; border: 1px solid var(--line); border-radius: 7px; background: white; color: var(--link); font: inherit; font-size: .875rem; cursor: pointer; }
-.language-toggle:hover { background: #edf2f8; }
-.language-toggle:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
-@media (max-width: 720px) { .topbar nav { order: 3; width: 100%; margin-left: 0; } .language-toggle { margin-left: auto; } }
+@media (max-width: 720px) { .topbar nav { width: 100%; margin-left: 0; } }
 nav a { color: var(--muted); font-size: .9rem; padding: 6px 12px; border-radius: 7px; }
 nav a:hover { background: #edf2f8; color: var(--link); text-decoration: none; }
 .layout { width: min(calc(100% - 56px), var(--max)); margin: 48px auto 0; display: grid; grid-template-columns: 230px minmax(0, 1fr); gap: 54px; align-items: start; }

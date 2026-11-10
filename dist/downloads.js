@@ -9,11 +9,9 @@
     if (!element || totals.size !== projects.length) return;
     const total = [...totals.values()].reduce((sum, value) => sum + value, 0);
     if (!Number.isSafeInteger(total)) return;
-    const en = document.documentElement.lang === 'en';
-    element.textContent = new Intl.NumberFormat(en ? 'en-US' : 'zh-CN').format(total);
-    element.title = en ? 'MNN-Pocket series + MNN-Sana-Edit-V2; repository download counts, not unique users. Includes cached values when a refresh fails.' : 'MNN-Pocket 全系列与 MNN-Sana-Edit-V2 的累计下载次数合计，非去重用户数；刷新失败时包含上次缓存值。';
+    element.textContent = new Intl.NumberFormat('en-US').format(total);
+    element.title = 'MNN-Pocket series + MNN-Sana-Edit-V2; repository download counts, not unique users. Includes cached values when a refresh fails.';
   }
-  document.addEventListener('languagechange', renderCombined);
   for (const project of projects) {
   const { endpoint, cacheKey } = project;
   const interval = 5 * 60 * 1000;
@@ -21,10 +19,8 @@
   const total = document.getElementById(`${project.prefix}-total`);
   const status = document.getElementById(`${project.prefix}-status`);
   if (!month || !total || !status) continue;
-  const english = () => document.documentElement.lang === 'en';
   let previous = null;
   let unavailable = false;
-  let lastCached = false;
   let pending = false;
   let lastAttempt = 0;
 
@@ -35,27 +31,21 @@
   function render(data, cached) {
     totals.set(project.prefix, data.downloadsAllTime);
     renderCombined();
-    lastCached = cached;
-    const en = english();
-    const number = new Intl.NumberFormat(en ? 'en-US' : 'zh-CN');
-    const time = new Intl.DateTimeFormat(en ? 'en-US' : 'zh-CN', { dateStyle: 'short', timeStyle: 'short' });
+    const number = new Intl.NumberFormat('en-US');
+    const time = new Intl.DateTimeFormat('en-US', { dateStyle: 'short', timeStyle: 'short' });
     month.textContent = number.format(data.downloads);
     total.textContent = number.format(data.downloadsAllTime);
-    const label = en ? (cached ? 'Last retrieved' : 'Updated') : (cached ? '上次获取' : '更新于');
-    const count = project.series && data.count ? (en ? ` · ${data.count} model repositories` : ` · ${data.count} 个模型仓库`) : '';
-    status.textContent = `${label} ${time.format(data.updatedAt)} · ${en ? 'Source: Hugging Face' : '来源 Hugging Face'}${count}${unavailable ? (en ? ' · Unable to refresh' : ' · 暂时无法刷新') : ''}`;
+    const label = cached ? 'Last retrieved' : 'Updated';
+    const count = project.series && data.count ? ` · ${data.count} model repositories` : '';
+    status.textContent = `${label} ${time.format(data.updatedAt)} · Source: Hugging Face${count}${unavailable ? ' · Unable to refresh' : ''}`;
   }
 
   function renderEmpty() {
     status.textContent = unavailable
-      ? (english() ? 'Statistics are temporarily unavailable. Visit the model on Hugging Face using the link above.' : '暂时无法获取统计，可点击模型名称查看 Hugging Face。')
-      : (english() ? 'Loading download statistics…' : '正在获取下载统计…');
+      ? 'Statistics are temporarily unavailable. Visit the model on Hugging Face using the link above.'
+      : 'Loading download statistics…';
   }
   renderEmpty();
-  document.addEventListener('languagechange', () => {
-    if (previous) render(previous, lastCached);
-    else renderEmpty();
-  });
 
   try {
     const saved = JSON.parse(localStorage.getItem(cacheKey));

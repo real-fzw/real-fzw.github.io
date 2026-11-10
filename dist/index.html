@@ -1,154 +1,147 @@
-<!doctype html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Zhewei Fang 的个人主页，记录项目、学习与日常。" />
-    <meta name="color-scheme" content="light" />
-    <title>Zhewei Fang — 个人主页</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232d5ca8'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial' font-size='27' fill='white'%3EZF%3C/text%3E%3C/svg%3E" />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <header class="topbar">
-      <a class="wordmark" href="#top">Zhewei Fang</a>
-      <nav aria-label="主导航">
-        <a href="#about">关于</a>
-        <a href="#research">研究</a>
-        <a href="#experience">经历</a>
-        <a href="#work">论文</a>
-        <a href="#open-source">开源</a>
-      </nav>
-      <button id="language-toggle" class="language-toggle" type="button" aria-label="Switch to English">EN</button>
-    </header>
+<!DOCTYPE html>
 
-    <main id="top" class="layout">
-      <aside class="profile">
-        <img class="avatar" src="./assets/profile-ghibli.png" alt="方喆炜的手绘头像" />
-        <h1>方喆炜</h1>
-        <p class="name-en">Zhewei Fang</p>
-        <p class="role">杭州电子科技大学 · 硕士研究生</p>
-        <p class="location">端侧大模型后训练 · 统一多模态</p>
-        <p class="profile-email"><a href="mailto:fzw_18268300430@163.com">fzw_18268300430@163.com</a></p>
-      </aside>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Zhewei Fang: research, publications, and open-source work on on-device language models and multimodal learning." name="description"/>
+<meta content="light" name="color-scheme"/>
+<title>Zhewei Fang — Personal Homepage</title>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232d5ca8'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial' font-size='27' fill='white'%3EZF%3C/text%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+<link href="./styles.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="topbar">
+<a class="wordmark" href="#top">Zhewei Fang</a>
+<nav aria-label="Main navigation">
+<a href="#about">About</a>
+<a href="#research">Research</a>
+<a href="#experience">Experience</a>
+<a href="#work">Publications</a>
+<a href="#open-source">Open Source</a>
+</nav>
 
-      <div class="content">
-        <section id="about" class="section first-section">
-          <h2>About Me <span>关于我</span></h2>
-          <p>你好，我是方喆炜，目前在杭州电子科技大学攻读计算机科学与技术硕士学位。</p>
-          <p>获国家奖学金、浙江省优秀毕业生和优秀毕业论文。</p>
-        </section>
+</header>
+<main class="layout" id="top">
+<aside class="profile">
+<img alt="Illustrated portrait of Zhewei Fang" class="avatar" src="./assets/profile-ghibli.png"/>
+<h1>Zhewei Fang</h1>
 
-        <section id="research" class="section">
-          <h2>Research Interests <span>研究兴趣</span></h2>
-          <p>主要关注大模型后训练、统一多模态、Agentic RL 与多模态理解与生成。</p>
-          <p>其他研究兴趣包括模式识别、图像质量评价与多模态情感识别。</p>
-        </section>
+<p class="role">Master’s Student · Hangzhou Dianzi University</p>
+<p class="location">On-device LLM Post-training · Unified Multimodal Models</p>
+<p class="profile-email"><a href="mailto:fzw_18268300430@163.com">fzw_18268300430@163.com</a></p>
+</aside>
+<div class="content">
+<section class="section first-section" id="about">
+<h2>About Me</h2>
+<p>I am Zhewei Fang, a master’s student in Computer Science and Technology at Hangzhou Dianzi University.</p>
+<p>I have received the National Scholarship, the Outstanding Graduate of Zhejiang Province award, and an Outstanding Graduation Thesis award.</p>
+</section>
+<section class="section" id="research">
+<h2>Research Interests</h2>
+<p>My research focuses on large language model post-training, unified multimodal models, agentic reinforcement learning, and multimodal understanding and generation.</p>
+<p>My other research interests include pattern recognition, image quality assessment, and multimodal affect recognition.</p>
+</section>
+<section class="section" id="experience">
+<h2>Experience</h2>
+<div class="experience-item">
+<div>
+<h3>Alibaba Group (Taobao) · Meta Team</h3>
+<p class="subtitle">Algorithm Research Intern · 2025–2026</p>
+</div>
+<ul>
+<li>Contributed extensively to the MNN-Pocket post-training pipeline, including data, SFT, RL, MOPD, quantization, evaluation, and on-device deployment.</li>
+<li>Built an SFT Loop Engine with failure analysis, synthetic data generation, and iterative training, improving average performance across 11 tasks by 7.46 percentage points.</li>
+<li>Contributed to multi-teacher distillation and QAT, compressing a 302.8M-parameter model to 166 MB. MNN open-source models accumulated over 6K downloads.</li>
+<li>Led Imp-o 1B–3B training and Sana-Turbo on-device acceleration, and advanced device–cloud agentic RL experiments.</li>
+</ul>
+</div>
+</section>
+<section class="section" id="open-source">
+<div class="section-heading-row">
+<h2>Open Source</h2>
+<div class="aggregate-downloads"><span class="aggregate-label">Total Downloads</span> <strong aria-live="polite" id="downloads-combined">—</strong></div>
+</div>
+<article aria-labelledby="pocket-name" class="model-downloads">
+<div class="paper-badges"><span class="author-badge">Primary Developer</span></div>
+<h3 id="pocket-name"><a href="https://huggingface.co/taobao-mnn?search_models=MNN-Pocket" rel="noreferrer" target="_blank">MNN-Pocket</a></h3>
+<p class="model-repo">On-device Small Models · Post-training &amp; Deployment</p>
+<p class="model-description">As a primary developer, contributed extensively to data construction, SFT, RL, multi-teacher distillation, quantization, and evaluation to bring models to on-device deployment with MNN.</p>
+<div class="paper-links"><a href="https://huggingface.co/taobao-mnn?search_models=MNN-Pocket" rel="noreferrer" target="_blank">Model Collection</a></div>
+<dl class="download-counts">
+<div><dt>Series Downloads · Last 30 Days</dt><dd id="pocket-month">—</dd></div>
+<div><dt>Series Downloads · All Time</dt><dd id="pocket-total">—</dd></div>
+</dl>
+<p class="download-scope">Total download counts across all MNN-Pocket model repositories published by taobao-mnn.</p>
+<p class="download-status" id="pocket-status" role="status">Loading download statistics…</p>
+</article>
+<article aria-labelledby="model-name" class="model-downloads">
+<div class="paper-badges"><span class="author-badge">Primary Developer</span></div>
+<h3 id="model-name"><a href="https://huggingface.co/taobao-mnn/MNN-Sana-Edit-V2" rel="noreferrer" target="_blank">MNN-Sana-Edit-V2</a></h3>
+<p class="model-repo">taobao-mnn · Hugging Face</p>
+<p class="model-description">Led the on-device development and optimization of MNN-Sana-Edit-V2, including model adaptation, inference acceleration, and open-source delivery with MNN.</p>
+<dl class="download-counts">
+<div><dt>Downloads · Last 30 Days</dt><dd id="hf-month">—</dd></div>
+<div><dt>Downloads · All Time</dt><dd id="hf-total">—</dd></div>
+</dl>
+<p class="download-status" id="hf-status" role="status">Loading download statistics…</p>
+</article>
+</section>
+<section class="section" id="work">
+<h2>Publications</h2>
+<div class="work-list">
+<article class="work-item">
+<div>
+<div class="paper-badges"><span>IEEE TPAMI · Accepted</span><span class="author-badge">Sole First Author</span></div>
+<h3>PerDepNet: Personality-guided Cross-domain Multitask Learning Network for Automated Video Depression Detection</h3>
+<p class="paper-authors"><strong>Zhewei Fang</strong>, Kaiyin Lian, Shiqing Zhang, Zhou Yu, Jun Yu, Siwei Ma, Qi Tian</p>
+<p>Introduces <strong>personality-domain information</strong> with cross-domain multitask learning and audiovisual fusion to better model depression-related emotional cues.</p>
+<div class="paper-links"><a href="https://ieeexplore.ieee.org/abstract/document/11673837" rel="noreferrer" target="_blank">Paper</a><span>CCF A</span></div>
+</div>
+<figure class="paper-figure"><img alt="Personality information guides depression prediction through shared video representations" loading="lazy" src="./assets/perdepnet-concept.png"/><figcaption>Concept Illustration</figcaption></figure>
+</article>
+<article class="work-item">
+<div>
+<div class="paper-badges"><span>PREPRINT · 2026</span><span class="author-badge">Co-first Author</span></div>
+<h3>Sibyl: An Efficient Small-large Model Collaboration Framework for Long-horizon Tasks</h3>
+<p class="paper-authors"><strong>Zhewei Fang</strong>, Yuxin Zhang, Zhenwei Shao, Mengze Li, Zheng Lin, Long Chen, Zhou Yu, Zhe Chen, Zhiwen Chen, Zhaode Wang, Chengfei Lv</p>
+<p>Trains on-device small models to learn <strong>when to consult cloud models and internalize their guidance</strong>. Self-evolving RL, consultation cold start, and consultation-aware RL improve long-horizon task success while reducing cloud calls.</p>
+<div class="paper-links"><a href="https://arxiv.org/pdf/2610.05383" rel="noreferrer" target="_blank">Paper</a><a href="https://arxiv.org/abs/2610.05383" rel="noreferrer" target="_blank">arXiv</a><a href="https://github.com/real-fzw/Sibyl" rel="noreferrer" target="_blank">Code</a></div>
+</div>
+<figure class="paper-figure"><img alt="Sibyl selectively consults a cloud model during on-device task execution" loading="lazy" src="./assets/sibyl-collaboration.png"/><figcaption>Collaboration Overview · Figure 1</figcaption></figure>
+</article>
+<article class="work-item">
+<div>
+<div class="paper-badges"><span>IEEE TIM · Published</span><span class="author-badge">First Author</span></div>
+<h3>Blind 3D-synthesized Image Quality Measurement by Analysis of Local and Global Statistical Properties</h3>
+<p class="paper-authors"><strong>Zhewei Fang</strong>, Yueli Cui, Mei Yu, Gangyi Jiang, Kaiyin Lian, Yulu Wen, Jiayao Xu</p>
+<p>Combines <strong>local and global statistical features</strong> to characterize virtual-view synthesis distortions and predict image quality without a reference image.</p>
+<div class="paper-links"><a href="https://doi.org/10.1109/TIM.2023.3306527" rel="noreferrer" target="_blank">Paper</a><span>2023</span></div>
+</div>
+<figure class="paper-figure"><img alt="Local and global statistics are fused for no-reference image quality prediction" loading="lazy" src="./assets/iqa-concept.png"/><figcaption>Concept Illustration</figcaption></figure>
+</article>
+</div>
+</section>
+<section class="section" id="awards">
+<h2>Honors &amp; Awards</h2>
+<ul class="compact-list">
+<li>National Scholarship (2023)</li>
+<li>Huawei ICT Competition · Global Second Prize / National First Prize (2023)</li>
+<li>CCF YOCSEF Academic Showcase · National Second Prize (2024)</li>
+<li>China International “Internet+” College Students Innovation and Entrepreneurship Competition · National Silver Award (2024)</li>
+</ul>
+</section>
+<section class="section contact-section" id="contact">
+<h2>Contact</h2>
+<p>For research discussions, projects, or open-source collaboration, feel free to reach out via WeChat or <a href="mailto:fzw_18268300430@163.com">email</a>.</p>
+<p>WeChat: <span class="wechat-id">fzwreal0430</span></p>
+</section>
+<footer>© <span id="year">2026</span> Zhewei Fang</footer>
+</div>
+</main>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 
-        <section id="experience" class="section">
-          <h2>Experience <span>实习经历</span></h2>
-          <div class="experience-item">
-            <div>
-              <h3>阿里巴巴集团（淘宝）· Meta 团队</h3>
-              <p class="subtitle">算法实习生 · 2025–2026</p>
-            </div>
-            <ul>
-              <li>深度参与 MNN-Pocket 后训练全流程，覆盖数据、SFT、RL、MOPD、量化、评测与端侧交付。</li>
-              <li>搭建 SFT Loop Engine，通过失败样本自动归因、合成补数与迭代训练，使 11 项任务均值提升 7.46 个百分点。</li>
-              <li>参与多教师蒸馏与 QAT，将 302.8M 模型压缩至 166MB；MNN 开源模型累计下载 6K+。</li>
-              <li>主导 Imp-o 1B–3B 训练与 Sana-Turbo 端侧加速，并推进端云协同 Agentic RL 实验。</li>
-            </ul>
-          </div>
-        </section>
-
-        <section id="open-source" class="section">
-          <div class="section-heading-row">
-            <h2>Open Source <span>开源项目</span></h2>
-            <div class="aggregate-downloads"><span class="aggregate-label">总下载量</span> <strong id="downloads-combined" aria-live="polite">—</strong></div>
-          </div>
-          <article class="model-downloads" aria-labelledby="pocket-name">
-            <div class="paper-badges"><span class="author-badge">主要开发者</span></div>
-            <h3 id="pocket-name"><a href="https://huggingface.co/taobao-mnn?search_models=MNN-Pocket" target="_blank" rel="noreferrer">MNN-Pocket</a></h3>
-            <p class="model-repo">端侧小模型 · 后训练与部署</p>
-            <p class="model-description">作为主要开发者，深度参与数据构建、SFT、RL、多教师蒸馏、量化与评测，推动模型在 MNN 端侧落地。</p>
-            <div class="paper-links"><a href="https://huggingface.co/taobao-mnn?search_models=MNN-Pocket" target="_blank" rel="noreferrer">模型系列</a></div>
-            <dl class="download-counts">
-              <div><dt>系列最近 30 天下载量</dt><dd id="pocket-month">—</dd></div>
-              <div><dt>系列累计下载量</dt><dd id="pocket-total">—</dd></div>
-            </dl>
-            <p class="download-scope">统计 taobao-mnn 下 MNN-Pocket 系列各模型仓库的下载次数合计。</p>
-            <p id="pocket-status" class="download-status" role="status">正在获取系列下载统计…</p>
-          </article>
-          <article class="model-downloads" aria-labelledby="model-name">
-            <div class="paper-badges"><span class="author-badge">主要开发者</span></div>
-            <h3 id="model-name"><a href="https://huggingface.co/taobao-mnn/MNN-Sana-Edit-V2" target="_blank" rel="noreferrer">MNN-Sana-Edit-V2</a></h3>
-            <p class="model-repo">taobao-mnn · Hugging Face</p>
-            <p class="model-description">主导 MNN-Sana-Edit-V2 的端侧开发与优化，完成模型适配、推理加速及 MNN 开源交付。</p>
-            <dl class="download-counts">
-              <div><dt>最近 30 天下载量</dt><dd id="hf-month">—</dd></div>
-              <div><dt>累计下载量</dt><dd id="hf-total">—</dd></div>
-            </dl>
-            <p id="hf-status" class="download-status" role="status">正在获取下载统计…</p>
-          </article>
-        </section>
-
-        <section id="work" class="section">
-          <h2>Publications <span>论文与研究</span></h2>
-          <div class="work-list">
-            <article class="work-item">
-              <div>
-                <div class="paper-badges"><span>IEEE TPAMI · 已录用</span><span class="author-badge">独立第一作者</span></div>
-                <h3>PerDepNet: Personality-guided Cross-domain Multitask Learning Network for Automated Video Depression Detection</h3>
-                <p class="paper-authors"><strong>Zhewei Fang</strong>, Kaiyin Lian, Shiqing Zhang, Zhou Yu, Jun Yu, Siwei Ma, Qi Tian</p>
-                <p>引入<strong>人格域信息</strong>，并设计跨领域多任务学习与视听融合模块，增强抑郁相关情绪线索建模。</p>
-                <div class="paper-links"><a href="https://ieeexplore.ieee.org/abstract/document/11673837" target="_blank" rel="noreferrer">Paper</a><span>CCF A</span></div>
-              </div>
-              <figure class="paper-figure"><img src="./assets/perdepnet-concept.png" alt="人格视频与抑郁视频通过共享编码器提取特征，人格信息辅助抑郁程度预测" loading="lazy" /><figcaption>核心思想示意</figcaption></figure>
-            </article>
-            <article class="work-item">
-              <div>
-                <div class="paper-badges"><span>PREPRINT · 2026</span><span class="author-badge">共同第一作者</span></div>
-                <h3>Sibyl: An Efficient Small-large Model Collaboration Framework for Long-horizon Tasks</h3>
-                <p class="paper-authors"><strong>Zhewei Fang</strong>, Yuxin Zhang, Zhenwei Shao, Mengze Li, Zheng Lin, Long Chen, Zhou Yu, Zhe Chen, Zhiwen Chen, Zhaode Wang, Chengfei Lv</p>
-                <p>让端侧小模型学会<strong>何时咨询云端大模型，并内化其指导</strong>。通过自演化强化学习、咨询冷启动与咨询感知强化学习，在提升长程任务成功率的同时减少云端调用。</p>
-                <div class="paper-links"><a href="https://arxiv.org/pdf/2610.05383" target="_blank" rel="noreferrer">Paper</a><a href="https://arxiv.org/abs/2610.05383" target="_blank" rel="noreferrer">arXiv</a><a href="https://github.com/real-fzw/Sibyl" target="_blank" rel="noreferrer">Code</a></div>
-              </div>
-              <figure class="paper-figure"><img src="./assets/sibyl-collaboration.png" alt="Sibyl 小模型按需咨询云端大模型并继续执行任务" loading="lazy" /><figcaption>论文协作示意 · Figure 1</figcaption></figure>
-            </article>
-            <article class="work-item">
-              <div>
-                <div class="paper-badges"><span>IEEE TIM · 已发表</span><span class="author-badge">第一作者</span></div>
-                <h3>Blind 3D-synthesized Image Quality Measurement by Analysis of Local and Global Statistical Properties</h3>
-                <p class="paper-authors"><strong>Zhewei Fang</strong>, Yueli Cui, Mei Yu, Gangyi Jiang, Kaiyin Lian, Yulu Wen, Jiayao Xu</p>
-                <p>提取<strong>局部与全局统计特征</strong>表征虚拟视点合成失真，完成无参考图像质量预测。</p>
-                <div class="paper-links"><a href="https://doi.org/10.1109/TIM.2023.3306527" target="_blank" rel="noreferrer">Paper</a><span>2023</span></div>
-              </div>
-              <figure class="paper-figure"><img src="./assets/iqa-concept.png" alt="从合成图像提取局部和全局统计特征，融合后预测图像质量" loading="lazy" /><figcaption>核心思想示意</figcaption></figure>
-            </article>
-          </div>
-        </section>
-
-        <section id="awards" class="section">
-          <h2>Honors &amp; Awards <span>荣誉奖项</span></h2>
-          <ul class="compact-list">
-            <li>国家奖学金（2023）</li>
-            <li>华为 ICT 大赛全球二等奖 / 全国一等奖（2023）</li>
-            <li>CCF YOCSEF 学术秀全国二等奖（2024）</li>
-            <li>中国“互联网+”大学生创新创业大赛国家银奖（2024）</li>
-          </ul>
-        </section>
-
-        <section id="contact" class="section contact-section">
-          <h2>Contact <span>联系</span></h2>
-          <p>如果你想聊聊研究、项目或开源合作，欢迎通过微信或 <a href="mailto:fzw_18268300430@163.com">Email</a> 联系我。</p>
-          <p>微信：<span class="wechat-id">fzwreal0430</span></p>
-        </section>
-
-        <footer>© <span id="year">2026</span> Zhewei Fang</footer>
-      </div>
-    </main>
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-    <script src="./language.js" defer></script>
-    <script src="./downloads.js" defer></script>
-  </body>
+<script defer="" src="./downloads.js"></script>
+</body>
 </html>
+
