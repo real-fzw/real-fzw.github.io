@@ -27,9 +27,12 @@
     'Contributed to multi-teacher distillation and QAT, compressing a 302.8M-parameter model to 166 MB. MNN open-source models accumulated over 6K downloads.',
     'Led Imp-o 1B–3B training and Sana-Turbo on-device acceleration, and advanced device–cloud agentic RL experiments.'
   ]);
-  translate('#open-source .author-badge', ['Core Contributor']);
+  translate('#open-source .author-badge', ['Primary Developer', 'Primary Developer']);
   translate('#open-source .model-repo', ['On-device Small Models · Post-training &amp; Deployment', 'taobao-mnn · Hugging Face']);
-  translate('#open-source .model-description', ['As a core contributor, worked on data construction, SFT, RL, multi-teacher distillation, quantization, and evaluation to bring models to on-device deployment with MNN.']);
+  translate('#open-source .model-description', [
+    'As a primary developer, contributed extensively to data construction, SFT, RL, multi-teacher distillation, quantization, and evaluation to bring models to on-device deployment with MNN.',
+    'Led the on-device development and optimization of MNN-Sana-Edit-V2, including model adaptation, inference acceleration, and open-source delivery with MNN.'
+  ]);
   translate('#open-source .paper-links a', ['Model Collection']);
   translate('.download-counts dt', ['Series Downloads · Last 30 Days', 'Series Downloads · All Time', 'Downloads · Last 30 Days', 'Downloads · All Time']);
   translate('.download-scope', ['Total download counts across all MNN-Pocket model repositories published by taobao-mnn.']);
